@@ -2,7 +2,7 @@
   "@context": "dtmi:dtdl:context;2",
   "@id": "dtmi:com:Nishitha:BugBash;1",
   "@type": "Interface",
-  "displayName": "BugBash",
+  "displayName": "BugBash 1",
   "contents": [
     {
       "@type": "Telemetry",
