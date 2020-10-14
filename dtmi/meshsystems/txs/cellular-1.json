@@ -1,6 +1,6 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:MeshSystems:tXs_cellular;1",
+  "@id": "dtmi:MeshSystems:txs:cellular;1",
   "@type": "Interface",
   "displayName": {
     "en": "Cellular"
@@ -69,7 +69,7 @@
     {
       "@type": "Property",
       "displayName": {
-        "en": "Network Type\t"
+        "en": "Network Type"
       },
       "name": "NetworkType",
       "schema": {
@@ -228,22 +228,10 @@
     },
     {
       "@type": "Property",
-      "description": {
-        "en": "Unique identifier for the current mobile network"
-      },
-      "displayName": {
-        "en": "PLMN"
-      },
-      "name": "PLMN",
-      "schema": "string"
-    },
-    {
-      "@type": "Property",
       "displayName": {
         "en": "APN"
       },
       "name": "APN",
-      "writable": true,
       "schema": "string"
     },
     {
@@ -260,6 +248,14 @@
         "en": "Modem Version"
       },
       "name": "ModVer",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "displayName": {
+        "en": "Country and Operator Code"
+      },
+      "name": "PLMN",
       "schema": "string"
     },
     {

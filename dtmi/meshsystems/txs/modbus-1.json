@@ -1,6 +1,6 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:MeshSystems:tXs_modbus;2",
+  "@id": "dtmi:MeshSystems:txs:modbus;1",
   "@type": "Interface",
   "displayName": {
     "en": "Modbus"
@@ -30,14 +30,14 @@
         },
         "mapValue": {
           "name": "Value",
-          "schema": "dtmi:MeshSystems:tXs_modbusOperation;1"
+          "schema": "dtmi:MeshSystems:txs:modbusOperation;1"
         }
       }
     }
   ],
   "schemas": [
     {
-      "@id": "dtmi:MeshSystems:tXs_modbusOperation;1",
+      "@id": "dtmi:MeshSystems:txs:modbusOperation;1",
       "@type": "Object",
       "fields": [
         {

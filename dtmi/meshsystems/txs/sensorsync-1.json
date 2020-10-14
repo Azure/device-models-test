@@ -1,6 +1,6 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:MeshSystems:tXs_mbus1blerdr;4",
+  "@id": "dtmi:MeshSystems:tXs:SensorSync;1",
   "@type": "Interface",
   "displayName": {
     "en": "Valentine"
@@ -8,7 +8,7 @@
   "contents": [
     {
       "@type": "Component",
-      "name": "DeviceInformation_2vm",
+      "name": "DeviceInformation",
       "schema": "dtmi:azure:DeviceManagement:DeviceInformation;1"
     },
     {
@@ -16,32 +16,32 @@
       "displayName": {
         "en": "Exterior"
       },
-      "name": "Exterior_62i",
-      "schema": "dtmi:MeshSystems:tXs_blereader;1"
+      "name": "Exterior",
+      "schema": "dtmi:MeshSystems:txs:blereader;1"
     },
     {
       "@type": "Component",
       "displayName": {
         "en": "Peripherals"
       },
-      "name": "Peripherals_62i",
-      "schema": "dtmi:MeshSystems:tXs_per;4"
+      "name": "Peripherals",
+      "schema": "dtmi:MeshSystems:txs:per;1"
     },
     {
       "@type": "Component",
       "displayName": {
         "en": "Location"
       },
-      "name": "Location_62i",
-      "schema": "dtmi:MeshSystems:tXs_location;2"
+      "name": "Location",
+      "schema": "dtmi:MeshSystems:txs:location;1"
     },
     {
       "@type": "Component",
       "displayName": {
         "en": "Cellular"
       },
-      "name": "Cellular_516",
-      "schema": "dtmi:MeshSystems:tXs_cellular;2"
+      "name": "Cellular",
+      "schema": "dtmi:MeshSystems:txs:cellular;1"
     },
     {
       "@type": "Component",
@@ -49,7 +49,7 @@
         "en": "Modbus"
       },
       "name": "Modbus",
-      "schema": "dtmi:MeshSystems:tXs_modbus;2"
+      "schema": "dtmi:MeshSystems:txs:modbus;1"
     }
   ]
 }

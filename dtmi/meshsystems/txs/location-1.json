@@ -1,6 +1,6 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:MeshSystems:tXs_location;3",
+  "@id": "dtmi:MeshSystems:txs:location;1",
   "@type": "Interface",
   "displayName": {
     "en": "Location"

@@ -1,6 +1,6 @@
 {
   "@context": "dtmi:dtdl:context;2",
-  "@id": "dtmi:MeshSystems:tXs_blereader;1",
+  "@id": "dtmi:MeshSystems:txs:blereader;1",
   "@type": "Interface",
   "displayName": {
     "en": "BLE Reader"

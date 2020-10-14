@@ -1,13 +1,12 @@
 {
-  "@id": "dtmi:txs:gs;1",
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:MeshSystems:txs:per;1",
   "@type": "Interface",
   "displayName": {
-    "en": "Gateway"
+    "en": "Peripherals"
   },
-  "@context": "dtmi:dtdl:context;2",
   "contents": [
     {
-      "@id": "dtmi:txs:gs:ConnectedOn;1",
       "@type": "Property",
       "displayName": {
         "en": "Connected On"
@@ -16,46 +15,38 @@
       "schema": "dateTime"
     },
     {
-      "@id": "dtmi:txs:gs:FirmwareVersion;1",
       "@type": "Property",
       "displayName": {
-        "en": "Firmware Version\t"
+        "en": "Firmware Version"
       },
       "name": "FirmwareVersion",
       "schema": "string"
     },
     {
-      "@id": "dtmi:txs:gs:SDK;1",
       "@type": "Property",
       "displayName": {
-        "en": "Azure IoT SDK\t"
+        "en": "Azure IoT SDK"
       },
       "name": "SDK",
       "schema": "string"
     },
     {
-      "@id": "dtmi:txs:gs:DPS;1",
       "@type": "Command",
       "commandType": "synchronous",
       "request": {
-        "@id": "dtmi:txs:gs:DPS:DPSParams;1",
         "name": "DPSParams",
         "schema": {
-          "@id": "dtmi:txs:gs:DPS:DPSParams:y42dnlz9n;1",
           "@type": "Object",
           "fields": [
             {
-              "@id": "dtmi:txs:gs:DPS:DPSParams:y42dnlz9n:IDScope;1",
-              "name": "IDScope",
+              "name": "scopeId",
               "schema": "string"
             },
             {
-              "@id": "dtmi:txs:gs:DPS:DPSParams:y42dnlz9n:deviceId;1",
               "name": "deviceId",
               "schema": "string"
             },
             {
-              "@id": "dtmi:txs:gs:DPS:DPSParams:y42dnlz9n:deviceKey;1",
               "name": "deviceKey",
               "schema": "string"
             }
@@ -68,16 +59,38 @@
       "name": "DPS"
     },
     {
-      "@id": "dtmi:txs:gs:Reboot;1",
+      "@type": "Command",
+      "commandType": "synchronous",
+      "displayName": {
+        "en": "Self Test"
+      },
+      "name": "SelfTest"
+    },
+    {
       "@type": "Command",
       "commandType": "synchronous",
       "displayName": {
         "en": "Reboot"
       },
-      "name": "Reboot"
+      "name": "Reboot",
+      "request": {
+        "name": "Params",
+        "schema": {
+          "@type": "Object",
+          "fields": [
+            {
+              "name": "reason",
+              "schema": "string"
+            },
+            {
+              "name": "delayMs",
+              "schema": "integer"
+            }
+          ]
+        }
+      }
     },
     {
-      "@id": "dtmi:txs:gs:HeartbeatOn;1",
       "@type": "Property",
       "displayName": {
         "en": "Heartbeat On"
@@ -86,7 +99,6 @@
       "schema": "dateTime"
     },
     {
-      "@id": "dtmi:txs:gs:HbInval;1",
       "@type": [
         "Property",
         "TimeSpan"
@@ -100,7 +112,6 @@
       "schema": "integer"
     },
     {
-      "@id": "dtmi:txs:gs:rt;1",
       "@type": "Telemetry",
       "description": {
         "en": "Runtime since reboot"
@@ -112,7 +123,6 @@
       "schema": "integer"
     },
     {
-      "@id": "dtmi:txs:gs:iv;1",
       "@type": [
         "Telemetry",
         "Voltage"
@@ -125,7 +135,6 @@
       "schema": "double"
     },
     {
-      "@id": "dtmi:txs:gs:tc;1",
       "@type": [
         "Telemetry",
         "Temperature"
@@ -138,7 +147,6 @@
       "unit": "degreeCelsius"
     },
     {
-      "@id": "dtmi:txs:gs:rh;1",
       "@type": [
         "Telemetry",
         "RelativeHumidity"
@@ -147,20 +155,22 @@
         "en": "Humidity"
       },
       "name": "rh",
-      "schema": "integer",
+      "schema": "double",
       "unit": "percent"
     },
     {
-      "@id": "dtmi:txs:gs:hp;1",
-      "@type": "Telemetry",
+      "@type": [
+        "Telemetry",
+        "DataSize"
+      ],
       "displayName": {
         "en": "Heap"
       },
       "name": "hp",
+      "unit": "byte",
       "schema": "integer"
     },
     {
-      "@id": "dtmi:txs:gs:ic;1",
       "@type": [
         "Telemetry"
       ],
@@ -171,16 +181,18 @@
       "schema": "integer"
     },
     {
-      "@id": "dtmi:txs:gs:dv;1",
-      "@type": "Telemetry",
+      "@type": [
+        "Telemetry",
+        "Angle"
+      ],
       "displayName": {
         "en": "Deviation Angle"
       },
       "name": "dv",
-      "schema": "integer"
+      "unit": "degreeOfArc",
+      "schema": "double"
     },
     {
-      "@id": "dtmi:txs:gs:x;1",
       "@type": "Telemetry",
       "displayName": {
         "en": "Pos-X"
@@ -189,7 +201,6 @@
       "schema": "double"
     },
     {
-      "@id": "dtmi:txs:gs:y;1",
       "@type": "Telemetry",
       "displayName": {
         "en": "Pos-Y"
@@ -198,7 +209,6 @@
       "schema": "double"
     },
     {
-      "@id": "dtmi:txs:gs:z;1",
       "@type": "Telemetry",
       "displayName": {
         "en": "Pos-Z"
@@ -207,7 +217,6 @@
       "schema": "double"
     },
     {
-      "@id": "dtmi:txs:gs:bt;1",
       "@type": [
         "Telemetry",
         "Voltage"
@@ -220,7 +229,6 @@
       "schema": "double"
     },
     {
-      "@id": "dtmi:txs:gs:PerInval;1",
       "@type": [
         "Property",
         "TimeSpan"
@@ -237,24 +245,6 @@
       "schema": "integer"
     },
     {
-      "@id": "dtmi:txs:gs:ModbusInterval;1",
-      "@type": [
-        "Property",
-        "TimeSpan"
-      ],
-      "description": {
-        "en": "Poll and report interval for the Modbus master"
-      },
-      "displayName": {
-        "en": "Modbus Interval"
-      },
-      "name": "ModbusInterval",
-      "writable": true,
-      "unit": "second",
-      "schema": "integer"
-    },
-    {
-      "@id": "dtmi:txs:gs:ev_sv0_2;1",
       "@type": [
         "Telemetry"
       ],
@@ -265,7 +255,6 @@
       "schema": "string"
     },
     {
-      "@id": "dtmi:txs:gs:ev_sv0_3;1",
       "@type": [
         "Telemetry"
       ],
@@ -276,7 +265,6 @@
       "schema": "string"
     },
     {
-      "@id": "dtmi:txs:gs:ev_sv0_0;1",
       "@type": [
         "Telemetry"
       ],
@@ -287,7 +275,6 @@
       "schema": "string"
     },
     {
-      "@id": "dtmi:txs:gs:ev_sv0_1;1",
       "@type": [
         "Telemetry"
       ],
@@ -295,10 +282,9 @@
         "en": "Power Restored"
       },
       "name": "ev_sv0_1",
-      "schema": "integer"
+      "schema": "string"
     },
     {
-      "@id": "dtmi:txs:gs:ev_sv0_4;1",
       "@type": [
         "Telemetry"
       ],
@@ -309,7 +295,6 @@
       "schema": "string"
     },
     {
-      "@id": "dtmi:txs:gs:ImpactThreshold;1",
       "@type": "Property",
       "displayName": {
         "en": "Impact Threshold"
@@ -319,7 +304,6 @@
       "schema": "float"
     },
     {
-      "@id": "dtmi:txs:gs:ImpactDuration;1",
       "@type": [
         "Property",
         "TimeSpan"
@@ -336,7 +320,6 @@
       "schema": "float"
     },
     {
-      "@id": "dtmi:txs:gs:AngleThreshold;1",
       "@type": [
         "Property",
         "Angle"
@@ -353,7 +336,6 @@
       "schema": "integer"
     },
     {
-      "@id": "dtmi:txs:gs:MotionThreshold;1",
       "@type": "Property",
       "description": {
         "en": "The motion detection threshold"
@@ -366,24 +348,20 @@
       "schema": "float"
     },
     {
-      "@id": "dtmi:txs:gs:mFwOTA;1",
       "@type": "Command",
       "commandType": "synchronous",
       "request": {
-        "@id": "dtmi:txs:gs:mFwOTA:params;1",
         "displayName": {
           "en": "params"
         },
         "name": "params",
         "schema": {
-          "@id": "dtmi:txs:gs:mFwOTA:params:fjreevzrgo;1",
           "@type": "Object",
           "displayName": {
             "en": "Object"
           },
           "fields": [
             {
-              "@id": "dtmi:txs:gs:mFwOTA:params:fjreevzrgo:url;1",
               "displayName": {
                 "en": "Blob SAS URL"
               },
@@ -399,7 +377,6 @@
       "name": "mFwOTA"
     },
     {
-      "@id": "dtmi:txs:gs:MotionDuration;1",
       "@type": [
         "Property",
         "TimeSpan"
