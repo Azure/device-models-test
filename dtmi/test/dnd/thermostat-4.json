@@ -155,8 +155,5 @@
   "displayName": {
     "en": "Default"
   },
-  "@context": [
-    "dtmi:iotcentral:context;2",
-    "dtmi:dtdl:context;2"
-  ]
+  "@context": "dtmi:dtdl:context;2"
 }
