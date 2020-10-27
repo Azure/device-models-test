@@ -1,0 +1,64 @@
+{
+  "@id": "dtmi:telit:bravo:RotationSensor;1",
+  "@type": "Interface",
+  "displayName": "BravoME910SensorInterfaces",
+  "description": "Reports the bravo Device environment Rotation Data information",
+  "@context": "dtmi:dtdl:context;2",
+  "contents": [
+    {
+      "@type": [
+        "Telemetry",
+        "Angle"
+      ],
+      "displayName": "Rotation_X_Angle",
+      "name": "rotation_x",
+      "schema": "double",
+      "unit": "radian",
+      "description": "Received Rotation sensor x (in radian)"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Angle"
+      ],
+      "displayName": "Rotation_Y_Angle",
+      "name": "rotation_y",
+      "schema": "double",
+      "unit": "radian",
+      "description": "Received Rotation sensor y (in radian)"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Angle"
+      ],
+      "displayName": "Rotation_Z_Angle",
+      "name": "rotation_z",
+      "schema": "double",
+      "unit": "radian",
+      "description": "Received Rotation sensor z (in radian)"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Angle"
+      ],
+      "displayName": "rotation_W_Angle",
+      "name": "rotation_w",
+      "schema": "double",
+      "unit": "radian",
+      "description": "Received Rotation sensor w (in radian)"
+    },
+    {
+      "@type": [
+        "Telemetry",
+        "Angle"
+      ],
+      "displayName": "rotation_estimatedaccuracy",
+      "name": "estimated_accuracy",
+      "schema": "double",
+      "unit": "radian",
+      "description": "Received Rotation sensor estimated_accuracy (in radian)"
+    }
+  ]
+}
