@@ -27,31 +27,31 @@
           "fields": [
             {
               "name": "ipAddress",
-              "displayName": "ipAddress",
+              "displayName": "IP Address",
               "schema": "string",
-              "comment": "It specifies the HostName / ip address to ping"
+              "comment": "It specifies Name of Host or IP address of Host to ping"
             },
             {
-              "name": "retryNum",
-              "displayName": "retryNum",
+              "name": "retries",
+              "displayName": "Retries",
               "schema": "integer",
               "comment": "[Optional] the number of Ping Echo Request to send 1-64 (default 4)"
             },
             {
               "name": "length",
-              "displayName": "length",
+              "displayName": "Length",
               "schema": "integer",
-              "comment": "[Optional] the lenght of Ping Echo Request message 32-1460 (default 32)"
+              "comment": "[Optional] the length of Ping Echo Request message 32-1460 (default 32)"
             },
             {
               "name": "timeout",
-              "displayName": "timeout",
+              "displayName": "Timeout",
               "schema": "integer",
-              "comment": "[Optional] the timeout, in 100 ms units, waiting a single Echo Reply 1-600 (default 50)"
+              "comment": "[Optional] the timeout, in 100 ms units, time to wait for Echo Reply 1-600 (default 50)"
             },
             {
               "name": "ttl",
-              "displayName": "ttl",
+              "displayName": "TTL",
               "schema": "integer",
               "comment": "[Optional] time to live 1-255 (default 128)"
             }

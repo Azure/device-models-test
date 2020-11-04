@@ -10,7 +10,7 @@
         "Telemetry",
         "Pressure"
       ],
-      "displayName": "Environment_Pressure",
+      "displayName": "Pressure",
       "name": "pressure",
       "schema": "double",
       "unit": "pascal",
@@ -23,9 +23,9 @@
       ],
       "schema": "double",
       "unit": "degreeCelsius",
-      "displayName": "Environment_Temperature",
+      "displayName": "Temperature",
       "name": "temperature",
-      "description": "Received Environment-temperature value (in double)"
+      "description": "Received Environment temperature value (in double)"
     },
     {
       "@type": [
@@ -34,9 +34,9 @@
       ],
       "schema": "double",
       "unit": "degreeCelsius",
-      "displayName": "Environment_Rawtemperature",
+      "displayName": "Raw Temperature",
       "name": "rawtemperature",
-      "description": "Received Environment-rawtemperature value (in double)"
+      "description": "Received device specific raw temperature value (in double)"
     },
     {
       "@type": [
@@ -45,7 +45,7 @@
       ],
       "schema": "double",
       "unit": "unity percent",
-      "displayName": "Environment_Humidity",
+      "displayName": "Relative Humidity",
       "name": "humidity",
       "description": "Received Environment Relative humidity value (in double)"
     },
@@ -56,7 +56,7 @@
       ],
       "schema": "double",
       "unit": "ohm",
-      "displayName": "Environment_IndexForAirQualityvalue",
+      "displayName": "IAQ",
       "name": "IAQ_signal",
       "description": "Received Environment Index For Air Quality (IAQ) value(in double)"
     }
