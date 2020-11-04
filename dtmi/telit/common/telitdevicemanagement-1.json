@@ -7,21 +7,21 @@
   "contents": [
     {
       "@type": "Telemetry",
-      "displayName": "SignalStrength_RSSI",
+      "displayName": "RSSI",
       "name": "rssi",
       "schema": "integer",
       "description": "Received signal strength indication (in dBm)"
     },
     {
       "@type": "Telemetry",
-      "displayName": "SignalStrength_Bitrate",
+      "displayName": "Bit rate",
       "name": "bitrate",
       "schema": "integer",
       "description": "net rate value (in integer)"
     },
     {
       "@type": "Telemetry",
-      "displayName": "SignalStrength_Bearer",
+      "displayName": "BER",
       "name": "bearer",
       "schema": "integer",
       "description": "bit error rate (in percent)"
