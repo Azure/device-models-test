@@ -14,7 +14,7 @@
     },
     {
       "@type": "Telemetry",
-      "displayName": "Bit rate",
+      "displayName": "Bit Rate",
       "name": "bitrate",
       "schema": "integer",
       "description": "net rate value (in integer)"
